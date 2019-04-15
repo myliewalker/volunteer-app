@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Karen's Campaign | Voter Reachout</title>
+    <!-- Bootstrap -->
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Linking CSS -->
+			 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+			 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+<div class="container">
+      <!-- Jumbotron Title -->
+      <div class="jumbotron">
+        <h1 class="text-center">Welcome to Karen's<br>Campaign</h1>
+        <h2 class="text-center">Volunteer Voter Reachout</h2>
+      </div>
+      <div class="description">
+        <p>Are you passionate about politics?<br>Do you want to increase voter participation?</p>
+        <p id="join">Sign up to help Karen reach<br>Michigan office</p>
+        <p>We reach out to voters by phone and through social media</p>
+      </div>
+
+      <!-- Input Contact Information -->
+      <div class="desc">
+          <p>Provide your contact information and we will reach out if there is an opening.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Contact Information</h3>
+            </div>
+            <div class="panel-body">
+              <form>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input class="form-control" id="firstname" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="lastname">Last Name</label>
+                  <input class="form-control" id="lastname" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="middlename">Middle Initial</label>
+                    <input class="form-control" id="middlename" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input class="form-control" id="email" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="phonenumber">Phone Number</label>
+                  <input class="form-control" id="phonenumber" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="birthday">Birthday (MM/DD/YY)</label>
+                  <input class="form-control" id="birthday" type="text">
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Input Interests-->
+          <div class="desc">
+            <p>Please let us know which teams you are interested in joining.</p>
+          </div>
+          <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div id="myDIV" class="panel-heading">
+                <h3 class="panel-title">Interests</h3>
+              </div>
+              <div class="panel-body">
+                <!-- <form> -->
+                  <div class="form-group">
+                    <label class="container">Calling Voters
+                      <input class="form-control" id="call" type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Social Media Pages
+                      <input class="form-control" id="media" type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Fundraiing
+                      <input class="form-control" id="fundraising" type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+                <!-- </form> -->
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+</div>
+    <!-- JavaScript -->
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  
+    <script src="https://code.jquery.com/jquery.js"></script>
+    
+       <!-- Moment js -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+
+</body>
+</html>

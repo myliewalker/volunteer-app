@@ -1,0 +1,151 @@
+.jumbotron {
+    background-color: transparent;
+
+    color: navy;
+    font-family: 'Bodini MT', Didot;
+    font-weight: 100px;
+    font-weight: bolder;
+    font-size: 60px;
+    
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 5px; 
+}
+
+h2 {
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 50px;
+}
+
+body {
+    padding-top: 120px;
+    background-color: white;
+
+    background-image: url("../images/lake.png");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: 1800px, 1200px;
+    bottom: 0;
+
+    font-family: 'Bodini MT', Didot;
+    font-size: 15px;  
+}
+
+.description {
+    padding-top: 350px;
+    font-weight: 800;
+    font-size: 30px;
+    color: lightskyblue;
+    text-align: center;
+    max-width: 1000px;
+    padding-bottom: 20px;
+}
+
+.description #join {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: navy;
+}
+
+.desc {
+    font-size: 20px;
+    font-weight: bolder;
+    color: lightskyblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.panel-default>.panel-heading {
+    border-color:navy;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0px;
+    background-color: lightblue;
+
+    color:darkslateblue;
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+}
+
+.panel-body {
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.form-control {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0px;
+    border-color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* hide default checkbox */
+input[type="checkbox"] {
+    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: solid;
+    border-color: lightblue;
+    border-width: 2px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* checkmark style */
+.container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid;
+    border-color: navy;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn {
+    background-color: lightblue;
+    color: white;
+}
+
+.btn:hover {
+    background-color: navy;
+}
+
+.btn:active {
+    background-color: navy;
+}
