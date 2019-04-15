@@ -2,9 +2,9 @@ var txtFile = "c:/test.txt";
 var file = new File(txtFile);
 var voters = [];
 var volunteers = [];
-var callingTeam = ["call"];
+var callingTeam = ["calling"];
 var socialMediaTeam = ["media"];
-var fundraiserTeam = ["fundraise"];
+var fundraiserTeam = ["fundraising"];
 var matched = new Map();
 
 //reads voter data from a text file
@@ -57,9 +57,9 @@ function groupInterests(person) {
     while (i != -1) {
         var job = order[i];
         if (interests.contains(job[0])) {
-            if (job[0].equals("call")) callingTeam.push(person);
-            else if (job[0].equals("media")) callingTeam.push(person);
-            else callingTeam.push(person);
+            if (job[0].equals("calling")) callingTeam.push(person);
+            else if (job[0].equals("media")) mediaTeam.push(person);
+            else fundraisingTeam.push(person);
             i = -1;
         }
     }
