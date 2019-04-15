@@ -81,6 +81,17 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0px;
+    border-color: navy;
+}
+
 .container {
     display: block;
     position: relative;
@@ -140,6 +151,7 @@ input[type="checkbox"] {
 .btn {
     background-color: lightblue;
     color: white;
+    border-color: navy;
 }
 
 .btn:hover {
@@ -147,5 +159,18 @@ input[type="checkbox"] {
 }
 
 .btn:active {
-    background-color: navy;
+    border: none !important;
+    outline: 0 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    background-color: navy !important;
+}
+
+.btn:focus {
+    background-color: lightblue;
+    border-color: navy !important;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }

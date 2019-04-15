@@ -74,9 +74,9 @@ $(document).ready(function(){
     $("#email").val("");
     $("#phonenumber").val("");
     $("#birthday").val("");
-    $('#calling').prop('checked', false)
-    $('#media').prop('checked', false)
-    $('#fundraising').prop('checked', false)
+    // $('#calling').prop('checked', false)
+    // $('#media').prop('checked', false)
+    // $('#fundraising').prop('checked', false)
   
     return false;
   
