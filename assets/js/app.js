@@ -64,19 +64,19 @@ $(document).ready(function(){
   
     console.log(newVolunteer.firstname, newVolunteer.lastname, newVolunteer.middlename, 
       newVolunteer.email, newVolunteer.phonenumber, newVolunteer.birthday, newVolunteer.interests)
-    module.exports.volunteer = newVolunteer;
+    module.exports.newVolunteer = newVolunteer;
 
   
-  // Clears all of the text-boxes
+  // Clears all of the inputs
     $("#firstname").val("");
     $("#lastname").val("");
     $("#middlename").val("");
     $("#email").val("");
     $("#phonenumber").val("");
     $("#birthday").val("");
-    // $('#calling').prop('checked', false)
-    // $('#media').prop('checked', false)
-    // $('#fundraising').prop('checked', false)
+    $('#calling').prop('checked', false)
+    $('#media').prop('checked', false)
+    $('#fundraising').prop('checked', false)
   
     return false;
   
@@ -88,7 +88,7 @@ $(document).ready(function(){
           console.log(childSnapshot.val());
   
   
-      // Store everything into a variable.
+      // Stores everything into a variable.
       var tbirthday = childSnapshot.val().birthday;
       var temail = childSnapshot.val().email;
       var tfirstname = childSnapshot.val().firstname;

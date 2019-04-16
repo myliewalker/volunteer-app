@@ -95,6 +95,7 @@ body {
 .container {
     display: block;
     position: relative;
+    padding-top: 4px;
     padding-left: 40px;
     margin-bottom: 12px;
     cursor: pointer;
@@ -155,7 +156,7 @@ input[type="checkbox"] {
 }
 
 .btn:hover {
-    background-color: navy;
+    background-color: navy !important;
 }
 
 .btn:active {

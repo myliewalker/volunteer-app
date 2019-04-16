@@ -29,12 +29,12 @@ function readTextFile(filepath) {
 }
 
 //updates the volunteer list based on info just added
-volunteers.push(updateVolunteers());
-function updateVolunteers() {
-    var sourceFile = require('./app');
-    var newVolunteer = console.log(sourceFile.volunteer);
-    return newVolunteer;
+var newVolunteer = function updateVolunteers() {
+    var tVolunteer = require("./app.js");
+    console.log(tVolunteer);
+    return tVolunteer;
 }
+volunteers.push(newVolunteer);
 
 //sort teams by fewest people
 var order = [callingTeam, socialMediaTeam, fundraiserTeam];
@@ -43,17 +43,17 @@ order.sort(function(a, b) {
 })
 
 //groups volunteers by interest
+//adds them to the team with the fewest people
 for (var person of volunteers) {
     groupInterests(person);
 }
 function groupInterests(person) {
     var interests = person.intersts.slice(0);
-    //TODO: elegibility
-    // var possible = [];
-        //for social media: if age < 30
-        //for fundraiser: if live in MI
-    if (interests.length == 0) order[0].push(person);
     var i = 0;
+    if (interests.length == 0) {
+        order[0].push(person);
+        i = -1;
+    }
     while (i != -1) {
         var job = order[i];
         if (interests.contains(job[0])) {
@@ -63,15 +63,12 @@ function groupInterests(person) {
             i = -1;
         }
     }
-    return;
 }
 
 //matches volunteers with voters
 var loc = 0;
 var voters_per_caller = voters.length / callingTeam.length;
 for (var caller of callingTeam) {
-    matchVoters(caller, loc, voters, voters_per_caller);
-    //TODO: include additional info
     var list = voters.slice(loc, loc+voters_per_caller);
     matched.set(caller, list);
     loc += voters_per_caller;
